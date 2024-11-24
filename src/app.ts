@@ -18,6 +18,14 @@ app.use('/api/products', cycleRouter.router);
 app.use('/api/orders', orderRouter.router);
 app.use('/api/orders/revenue', totaleRevenue.router);
 
+// demo router for testing
+app.get('/', (req: Request, res: Response) => {
+  res.status(200).json({
+    message: 'Hello World',
+    success: true,
+    data: 'Welcome Our Site',
+  });
+});
 // global generic error handel middleware
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
   const isValidationError = err.name === 'ValidationError';

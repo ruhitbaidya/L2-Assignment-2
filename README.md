@@ -7,8 +7,46 @@ A robust Express.js application built with TypeScript and integrated with MongoD
 ## Features
 
 - **Bicycle Management**:
+
   - Create, read, update, and delete bicycle records.
   - Filter bicycles by name, brand, or type.
+
+  - CRUD URL
+    Get All Product-
+
+  ```bash
+   get - http://localhost:5000/api/products
+
+  ```
+
+  Create Product-
+
+  ```bash
+  post- http://localhost:5000/api/products
+
+  ```
+
+  Get Singal Product -
+
+  ```bash
+  get - http://localhost:5000/api/products/:(Id Give Here)
+
+  ```
+
+  Update Product -
+
+  ```bash
+  put - http://localhost:5000/api/products
+
+  ```
+
+  Delete Product -
+
+  ```bash
+  delete - http://localhost:5000/api/products
+
+  ```
+
 - **Order Management**:
 
   - Place orders for bicycles.

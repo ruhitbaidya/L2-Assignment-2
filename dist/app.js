@@ -19,6 +19,14 @@ app.use((0, cors_1.default)());
 app.use('/api/products', cycle_router_1.cycleRouter.router);
 app.use('/api/orders', order_router_1.orderRouter.router);
 app.use('/api/orders/revenue', totaleRevenue_1.totaleRevenue.router);
+// demo router for testing
+app.get('/', (req, res) => {
+    res.status(200).json({
+        message: 'Hello World',
+        success: true,
+        data: 'Welcome Our Site',
+    });
+});
 // global generic error handel middleware
 app.use((err, req, res, next) => {
     const isValidationError = err.name === 'ValidationError';
