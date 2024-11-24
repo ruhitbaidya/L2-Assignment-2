@@ -12,38 +12,43 @@ A robust Express.js application built with TypeScript and integrated with MongoD
   - Filter bicycles by name, brand, or type.
 
   - CRUD URL
-    Get All Product-
+    for All Operation-
+    get :
 
   ```bash
-   get - http://localhost:5000/api/products
+    http://localhost:5000/api/products
 
   ```
 
   Create Product-
+  post:
 
   ```bash
-  post- http://localhost:5000/api/products
+   http://localhost:5000/api/products
 
   ```
 
   Get Singal Product -
+  get :
 
   ```bash
-  get - http://localhost:5000/api/products/:(Id Give Here)
+   http://localhost:5000/api/products/:(Id Give Here)
 
   ```
 
   Update Product -
+  put :
 
   ```bash
-  put - http://localhost:5000/api/products
+   http://localhost:5000/api/products
 
   ```
 
   Delete Product -
+  delete :
 
   ```bash
-  delete - http://localhost:5000/api/products
+   http://localhost:5000/api/products
 
   ```
 
