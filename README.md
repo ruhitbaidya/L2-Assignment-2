@@ -13,7 +13,7 @@ A robust Express.js application built with TypeScript and integrated with MongoD
 
   - CRUD URL
     for All Operation-
-    get :
+    GET :
 
   ```bash
     http://localhost:5000/api/products
@@ -21,7 +21,7 @@ A robust Express.js application built with TypeScript and integrated with MongoD
   ```
 
   Create Product-
-  post:
+  POST :
 
   ```bash
    http://localhost:5000/api/products
@@ -29,7 +29,7 @@ A robust Express.js application built with TypeScript and integrated with MongoD
   ```
 
   Get Singal Product -
-  get :
+  GET :
 
   ```bash
    http://localhost:5000/api/products/:(Id Give Here)
@@ -37,18 +37,18 @@ A robust Express.js application built with TypeScript and integrated with MongoD
   ```
 
   Update Product -
-  put :
+  PUT :
 
   ```bash
-   http://localhost:5000/api/products
+   http://localhost:5000/api/products/:(id and data give here)
 
   ```
 
   Delete Product -
-  delete :
+  DELETE :
 
   ```bash
-   http://localhost:5000/api/products
+   http://localhost:5000/api/products/(id give here)
 
   ```
 
@@ -58,9 +58,25 @@ A robust Express.js application built with TypeScript and integrated with MongoD
   - Automatically adjust inventory based on order quantity.
   - Mark bicycles as out of stock when inventory is depleted.
 
+  Create Order -
+  POST :
+
+  ```bash
+   http://localhost:5000/api/orders(product data give here)
+
+  ```
+
 - **Revenue Calculation**:
 
   - Calculate total revenue from all orders using MongoDB aggregation.
+
+Get Totale Ravenue Calculate -
+GET :
+
+```bash
+ http://localhost:5000/api/orders/revenue
+
+```
 
 - **Error Handling**:
 
